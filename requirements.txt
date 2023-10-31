@@ -1,0 +1,16 @@
+ane_transformers
+assemblyai
+coremltools
+dotenv
+flask
+matplotlib
+numpy
+openai
+openai-whisper
+pyannote.audio
+pyaudio
+SpeechRecognition
+streamlit
+torch
+torchaudio
+websockets

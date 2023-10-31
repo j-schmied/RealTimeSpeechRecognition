@@ -1,0 +1,75 @@
+@Misc{AudioMNIST,
+  author = {soerenab},
+  title  = {\relax{AudioMNIST}},
+  year   = {2018},
+  url    = {https://github.com/soerenab/AudioMNIST},
+}
+
+@Misc{PyAnnoteSpeakDiar,
+  author = {pyannote},
+  title  = {\relax{speaker-diarization}},
+  year   = {2023},
+  url    = {https://huggingface.co/pyannote/speaker-diarization},
+}
+
+@InProceedings{Bredin1911a,
+  author   = {Bredin, Hervé and Yin, Ruiqing and Coria, Juan and Gelly, Gregory and Korshunov, Pavel and Lavechin, Marvin and Fustes, Diego and Titeux, Hadrien and Bouaziz, Wassim and Gill, Marie-Philippe},
+  title    = {PYANNOTE.AUDIO: NEURAL BUILDING BLOCKS FOR SPEAKER DIARIZATION},
+  year     = {1911},
+  abstract = {We introduce pyannote.audio, an open-source toolkit written in Python for speaker diarization. Based on PyTorch machine learning framework, it provides a set of trainable end-to-end neural building blocks that can be combined and jointly optimized to build speaker diarization pipelines. pyannote.audio also comes with pre-trained models covering a wide range of domains for voice activity detection, speaker change detection, overlapped speech detection, and speaker embedding-reaching state-of-the-art performance for most of them.},
+  file     = {:/Users/jannikschmied/Documents/Dev/real-time-whisper/resource/1911.01255.pdf:PDF},
+  keywords = {speaker diarization, voice activity detection, speaker change detection, overlapped speech detection, speaker embedding},
+}
+
+@InProceedings{Bredin2014,
+  author   = {Bredin, Hervé and Laurent, Antoine},
+  title    = {End-to-end speaker segmentation for overlap-aware resegmentation},
+  year     = {2014},
+  abstract = {Speaker segmentation consists in partitioning a conversation between one or more speakers into speaker turns. Usually addressed as the late combination of three sub-tasks (voice activity detection, speaker change detection, and overlapped speech detection), we propose to train an end-to-end segmentation model that does it directly. Inspired by the original end-to-end neural speaker diarization approach (EEND), the task is modeled as a multi-label classification problem using permutation-invariant training. The main difference is that our model operates on short audio chunks (5 seconds) but at a much higher temporal resolution (every 16ms). Experiments on multiple speaker diarization datasets conclude that our model can be used with great success on both voice activity detection and overlapped speech detection. Our proposed model can also be used as a post-processing step, to detect and correctly assign overlapped speech regions. Relative diarization error rate improvement over the best considered baseline (VBx) reaches 17% on AMI, 13% on DIHARD 3, and 13% on VoxConverse.},
+  file     = {:/Users/jannikschmied/Documents/Dev/real-time-whisper/resource/2104.04045.pdf:PDF},
+  keywords = {speaker diarization, speaker segmentation, voice activity detection, overlapped speech detection, resegmentation},
+}
+
+@Article{Jia2020,
+  author    = {Yanjie Jia and Xi Chen and Jieqiong Yu and Lianming Wang and Yuanzhe Xu and Shaojin Liu and Yonghui Wang},
+  journal   = {Complex {\&}amp$\mathsemicolon$ Intelligent Systems},
+  title     = {Speaker recognition based on characteristic spectrograms and an improved self-organizing feature map neural network},
+  year      = {2020},
+  month     = {jun},
+  abstract  = {To obtain a speaker's pronunciation characteristics, a method is proposed based on an idea from bionics, which uses spectrogram statistics to achieve a characteristic spectrogram to give a stable representation of the speaker's pronunciation from a linear superposition of short-time spectrograms. To deal with the issue of slow network training and recognition speed for speaker recognition systems on resource-constrained devices, based on a traditional SOM neural network, an adaptive clustering self-organizing feature map SOM (AC-SOM) algorithm is proposed. This algorithm automatically adjusts the number of neurons in the competition layer based on the number of speakers to be recognized until the number of clusters matches the number of speakers. A 100-speaker database of characteristic spectrogram samples was built and applied to the proposed AC-SOM model, yielding a maximum training time of only 304 s, with a maximum sample recognition time of less than 28 ms. Comparing to other approaches, the proposed method offers greatly improved training and recognition speed without sacrificing too much recognition accuracy. The promising results suggest that the proposed method satisfies real-time data processing and execution requirements for edge intelligence systems better than other speaker recognition methods.},
+  date      = {2020-06-29},
+  day       = {29},
+  doi       = {10.1007/s40747-020-00172-1},
+  file      = {:/Users/jannikschmied/Documents/Dev/real-time-whisper/resource/SpeakerRecognition_Melspec_CNN.pdf:PDF},
+  keywords  = {Speaker recognition, Characteristic spectrogram, Adaptive clustering, Neural network, Deep learning, Edge intelligence},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+@InProceedings{Koluguri2022a,
+  author    = {Nithin Rao Koluguri and Taejin Park and Boris Ginsburg},
+  booktitle = {{ICASSP} 2022 - 2022 {IEEE} International Conference on Acoustics, Speech and Signal Processing ({ICASSP})},
+  title     = {{TitaNet}: Neural Model for Speaker Representation with 1D Depth-Wise Separable Convolutions and Global Context},
+  year      = {2022},
+  month     = {may},
+  publisher = {{IEEE}},
+  abstract  = {In this paper, we propose TitaNet, a novel neural network architecture for extracting speaker representations. We employ 1D depth-wise separable convolutions with Squeezeand-Excitation (SE) layers with global context followed by channel attention based statistics pooling layer to map variable-length utterances to a fixed-length embedding (tvector). TitaNet is a scalable architecture and achieves stateof-the-art performance on speaker verification task with an equal error rate (EER) of 0.68% on the VoxCeleb1 trial file and also on speaker diarization tasks with diarization error rate (DER) of 1.73% on AMI-MixHeadset, 1.99% on AMI-Lapel and 1.11% on CH109. Furthermore, we investigate various sizes of TitaNet and present a light TitaNet-S model with only 6M parameters that achieve near state-of-the-art results in diarization tasks.},
+  doi       = {10.1109/icassp43922.2022.9746806},
+  file      = {:/Users/jannikschmied/Documents/Dev/real-time-whisper/resource/TitaNet_Neural_Model_for_Speaker_Representation_with_1D_Depth-Wise_Separable_Convolutions_and_Global_Context.pdf:PDF},
+  keywords  = {speaker verification, speaker embedding, t-vectors, context, diarization},
+}
+
+@inproceedings{Plaquet23,
+  author={Alexis Plaquet and Hervé Bredin},
+  title={{Powerset multi-class cross entropy loss for neural speaker diarization}},
+  year=2023,
+  booktitle={Proc. INTERSPEECH 2023},
+}
+
+@inproceedings{Bredin23,
+  author={Hervé Bredin},
+  title={{pyannote.audio 2.1 speaker diarization pipeline: principle, benchmark, and recipe}},
+  year=2023,
+  booktitle={Proc. INTERSPEECH 2023},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
