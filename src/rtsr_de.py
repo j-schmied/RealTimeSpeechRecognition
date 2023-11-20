@@ -5,6 +5,7 @@ Author:     Jannik Schmied
 Credits:    https://github.com/davabase/whisper_real_time
 """
 import argparse
+import dotenv
 import io
 import os
 import speech_recognition as sr
@@ -19,8 +20,10 @@ from tempfile import NamedTemporaryFile
 from time import sleep
 from sys import platform
 
+env = dotenv.dotenv_values()
 
 ATTENTION_STEPS = 3
+HF_API_KEY = env["HF_API_KEY"]
 
 
 def parse_args():
@@ -78,7 +81,7 @@ def main():
     # Init speaker diarization
     """https://huggingface.co/pyannote/speaker-diarization"""
     sd_model = "pyannote/speaker-diarization@2.1"
-    sd_pipeline = Pipeline.from_pretrained(sd_model, use_auth_token="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")
+    sd_pipeline = Pipeline.from_pretrained(sd_model, use_auth_token=HF_API_KEY)
 
     record_timeout = args.record_timeout
     phrase_timeout = args.phrase_timeout
